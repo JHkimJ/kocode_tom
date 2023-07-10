@@ -1,0 +1,46 @@
+/* 
+
+css 를 이용해서 html에 모양, 색, 크기를 적용하려면
+html을 선택해야된다 - id(#), class(.), tag
+
+ td{
+    color:red;
+ } 
+ */
+ #resume{
+    width:500px;
+    margin: 0 auto; /* 가운데위치표시*/
+ }
+ 
+.title{
+    text-align:right;
+}
+ .intro{
+    font-size:12px;
+ } 
+ .need{
+    border-color: rgb(255, 0, 0);
+    border-width: 3px;
+    border-radius: 10px;
+ }
+ .need:focus{
+    outline:none;
+ }
+/* name = part 인 select 태그만 선택 */
+ select[name=part]{
+    width: 120px;
+ }
+ input[type=date]{
+    width: 160px;
+    font-size:20px;
+ }
+ input[type=number]{
+    width: 70px;
+    font-size: 15px;
+ }
+ #selfIntro{
+    width: 350px;
+    height: 150px;
+    resize: none;
+    /* overflow: hidden; 스크롤을 없앨수 있음 */
+ }

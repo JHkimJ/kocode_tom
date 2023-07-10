@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>엘지전자 2023년도 공채 입사지원 페이지</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jaeho Kim">
+    <meta name="keywords" content="엘지, 엘지전자, 공채, 입사지원, lg">
+    <meta name="description" content="엘지전자 2023년도 공채 입사지원 페이지">
+    <!-- link 태그 파일을 연결 -->
+    <!-- Atrribute : href 연결링크 hyperlink reference , rel = -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <form id="apply" action="apply.php" method="get">
+        <table id="resume">
+            <tr>
+                <td class="title">아이디</td>
+                <td><input type="text" name="userId" class="need"/></td>
+            </tr>
+            <tr>
+                <td class="title">비밀번호</td>
+                <td><input type="password" name="userPw" class="need"/></td>
+            </tr>
+
+            <tr>
+                <td class="title">성명</td>
+                <td><input type="text" name="userName" class="need"/></td>
+            </tr>
+
+            <tr>
+                <td class="title">생년월일</td>
+                <td><input type="date" name="userBirth" /></td>
+            </tr>
+
+            <tr>
+                <td class="title">지원부서</td>
+                <td>
+                    <select name="part">
+                        <option value="">지원부서 선택</option>
+                        <option value="1">개발팀</option>
+                        <option value="2">디자인팀</option>
+                        <option value="3">컨설팅팀</option>
+                        <option value="4">경영지원탐</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="title">희망연봉</td>
+                <td>
+                    <input type="number" name="payment" step=100 min="0" max="4200"> 만원
+                    <input type="radio" name="inter"> 사내 규정에 따름
+                </td>
+            </tr>
+
+            <tr>
+                <td class="title">국적</td>
+                <td>
+                    <input type="radio" name="national" >내국인
+                    <input type="radio" name="national" >외국인
+                </td>
+            </tr>
+            <tr>
+                <td class="title intro">자기소개서(300자 미만)</td> <!-- 두가지 클래스임 -->
+                <td>
+                    <textarea id="selfIntro" maxlength="300" placeholder="300자 미만을 입력하세요."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="title intro"></td>   
+                <td colspan="2"><button>제출</button></td>
+            </tr>
+        </table>
+    </form>    
+</body>
+</html>
