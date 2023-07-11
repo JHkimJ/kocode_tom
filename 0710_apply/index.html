@@ -11,8 +11,86 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+    <table id="spec">
+        <tr>
+            <th>무게</th>
+            <td>21.5kg</td>
+            <th>가로</th>
+            <td>1,200mm</td>
+        </tr>
+        <tr>
+            <th>세로</th>
+            <td>200mm</td>
+            <th>소비전력</th>
+            <td>2W/h</td>
+        </tr>
+    </table>
+
+    <table id="grade">
+        <tr>
+            <th>성명</th>
+            <th>수학</th>
+            <th>과학</th>
+        </tr>
+        <tr>
+            <td>김태희</td>
+            <td>95</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>한지호</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+    </table>
+
+    <div id="box3">
+        <div>dasdsadfqwf</div>
+        <p>asfsafsafasd</p>
+        <p>asdsafwqf</p>
+        <div>asdsadwqf</div>
+        <p>asfsafwqf</p>
+        <p>asfsafdfqe</p>
+        <div>asfsafqwfqwf</div>
+        <p>asfafasffa</p>
+        <p>asfasfqfqf</p>
+        <div>asdsadasdwqd</div>
+        <p>asdsadqwf</p>
+    </div>
+
+
+
+    <div id="box2">
+        <p>lksdaki askog</p>
+        <p>lksdaki askog</p>
+        <p>lksdaki askog</p>
+        <p>lksdaki askog</p>
+        <p>lksdaki askog</p>
+        <p>lksdaki askog</p>
+        <p>lksdaki askog</p>
+        <p>lksdaki askog</p>
+        <p>lksdaki askog</p>
+    </div>
+
+
+    <p id="p1"></p>
+    <p class="p2">asdadsad</p>
+    <p class="p2">asddasdff adsad</p>
+    <div id="parent">
+        <p>gpasefpm</p>
+        <p>gpasefpm</p>
+        <span>ddd span tag</span>
+        <span>ddd span tag</span>
+    </div>
+    <div id="box1">
+        <p>동해물과 백두산이 마르고 닳도록</p>
+        <p>하느님이 보우하사 우리나라 만세</p>
+    </div>
+    <a href="html_div_style.html">링크</a> <!-- 내부링크 -->
+    <a href="http://naver.com">외부 링크</a>
     <form id="apply" action="apply.php" method="get">
         <table id="resume">
+            
             <tr>
                 <td class="title">아이디</td>
                 <td><input type="text" name="userId" class="need"/></td>
@@ -40,7 +118,7 @@
                         <option value="1">개발팀</option>
                         <option value="2">디자인팀</option>
                         <option value="3">컨설팅팀</option>
-                        <option value="4">경영지원탐</option>
+                        <option value="4">경영지원팀</option>
                     </select>
                 </td>
             </tr>
@@ -56,19 +134,19 @@
             <tr>
                 <td class="title">국적</td>
                 <td>
-                    <input type="radio" name="national" >내국인
-                    <input type="radio" name="national" >외국인
+                    <input type="radio" name="national" value="1">내국인
+                    <input type="radio" name="national" value="0">외국인
                 </td>
             </tr>
             <tr>
-                <td class="title intro">자기소개서(300자 미만)</td> <!-- 두가지 클래스임 -->
+                <td class="title intro">자기소개서<br>(300자 미만)</td> <!-- 두가지 클래스임 -->
                 <td>
                     <textarea id="selfIntro" maxlength="300" placeholder="300자 미만을 입력하세요."></textarea>
                 </td>
             </tr>
             <tr>
                 <td class="title intro"></td>   
-                <td colspan="2"><button>제출</button></td>
+                <td colspan="2"><button type="button">제출</button></td>
             </tr>
         </table>
     </form>    
