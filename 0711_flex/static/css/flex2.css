@@ -1,0 +1,56 @@
+.item:nth-child(1){
+    background-color: blueviolet;
+}
+.item:nth-child(2){
+    background-color: aqua;
+}
+.item:nth-child(3){
+    background-color: red;
+}
+.item:nth-child(4){
+    background-color: bisque;
+}
+
+#box1{
+    width:500px;
+    height:200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+#box1 .item{
+    width: 50px;
+}
+#box2{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center; /*주축 */
+    align-items:center; /* 교차축 stretch 부모 태그의 높이만큼 채워라*/
+}
+#box2 .item{
+    width: 50px;
+    height: 50px;
+}
+#box3{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction:column; /*방향 설정*/
+    justify-content:end;
+    align-items:center;
+}
+#box3 .item{
+    /* width 를 없애면 행이 교차축이 된다 */
+    width: 50px;
+    height: 30px;
+}
+#box3 .item:nth-child(3){
+    order: 1; /*flex-direction 이 column 이면 order로 순서를 정할수 있다.*/
+}
+#box3 .item:nth-child(1){
+    order: 2;
+}
+
