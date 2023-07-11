@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#para1::before{
+    content: "ㅋㅋㅋㅋ";
+    color: red;
+}
+#para1::after{
+    content: "ㅎㅎㅎ";
+    color: green;
+}
+#list1{
+    margin-left:25px
+}
+#list1>li:after{ /*before 와 after는 종료태그가 있어야한다, 종료태그 바로 이전에 위치함*/
+    content:" 원";
+    font-size: 0.8em;
+    color: gray;
+}
+#clsBtn{
+    width: 50px;
+    height: 50px;
+}
+#clsBtn::before,
+#clsBtn::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: red;
+
+    position:absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%); /* 정중앙으로 보낼수있음 */
+}
