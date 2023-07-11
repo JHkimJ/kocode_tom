@@ -1,0 +1,26 @@
+#wrap{
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+    
+}
+#box1{
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    height: 1000px;
+}
+.menu_box1{
+    border: 1px solid blue;
+    height: 1000px;
+    width: 150px; 
+    justify-content:left;
+       
+}
+
+.item {
+   width: 150px;
+    
+}
