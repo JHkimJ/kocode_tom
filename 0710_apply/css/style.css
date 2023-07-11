@@ -1,0 +1,143 @@
+/* CSS 리셋 */
+*{ /* 모든마진,패딩을 호출 */
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; /*border의 기본 칸 border-box */
+}
+/* 
+
+css 를 이용해서 html에 모양, 색, 크기를 적용하려면
+html을 선택해야된다 - id(#), class(.), tag
+
+ td{
+    color:red;
+ } 
+ */
+
+#spec{
+   margin: 20px;
+   border-collapse: collapse;
+   border-top: 1px solid orange;
+}
+#spec th,
+#spec td {
+   padding: 0.2em;
+   border-bottom: 1px solid red;
+   border-right: 1px solid blue;
+}
+#spec th{
+   background-color: antiquewhite;
+}
+#spec th:last-child,
+#spec td:last-child{
+   border-right: none;
+
+}
+
+
+
+
+ #grade {
+   margin: 30px;
+   border-collapse: collapse; /* 경계선의 여백을 없앰 */
+   border-top: 1px solid blue;
+ }
+ #grade th,
+ #grade td {
+   border-bottom: 1px solid red;
+   border-right: 1px solid black;
+ }
+ #grade th:last-of-type,
+ #grade td:last-of-type{
+   border-right: none;
+ }
+#box3>p:first-of-type{ /* box3 에서 태그중 첫번째p 태그*/
+   color: red;
+}
+
+#box2>p:nth-child(3n+1){   /*even짝수 ,odd홀수, 2n짝수 2n-1홀수*/
+   color:orange;
+
+}
+
+a{
+   text-decoration: none;
+}
+
+ #resume{
+    width:500px;
+    margin: 0 auto; /*양옆의 여백을 자동조절하여 가운데로 조정*/
+ }
+ 
+ #box1>p:first-child{ /* 태그의 첫줄과 마지막줄을 선택할수있다 first-child ,last-child*/
+   color: purple;
+
+ }
+
+#box1>p:nth-child(2){ /*nth-child(숫자) n번째의 자식을 호출*/
+   color:yellow;
+}
+
+ #apply:hover{
+   cursor:grab;
+ }
+ #apply:active{
+   cursor:grabbing;
+ }
+/* #p1{
+   color: red;
+}
+.p2{
+   color: red;
+} */
+#p1, .p2{
+    color: aqua;
+}
+#resume td{ /* resume 안에 td 를 선택 (#id 선택자{})*/
+   border: 1px solid orange;
+
+}
+#parent>p{  /* parent 안에 p태그만 선택, 자식 선택자*/
+   color: yellow;
+}
+
+#resume tr:nth-child(2n)>td{
+   background-color: cyan;
+}
+
+.title{
+    text-align:right;
+    padding-right: 10px;
+}
+ .intro{
+    font-size:12px;
+ } 
+ .need{
+    /* border-color: rgb(255, 0, 0);
+    border-width: 3px; */
+    /* short-hand */
+    border: 3px solid red;
+    border-radius: 10px;
+ }
+ /* 가상클래스 ,상태 ~했을때*/
+ .need:focus{
+    outline:none;
+ }
+/* name = part 인 select 태그만 선택 */
+ select[name=part]{
+    width: 120px;
+ }
+ input[type=date]{
+    width: 160px;
+    font-size:20px;
+ }
+ input[type=number]{
+    width: 70px;
+    font-size: 15px;
+ }
+ #selfIntro{
+    width: 350px;
+    height: 150px;
+    resize: none;
+    /* overflow: hidden; 스크롤을 없앨수 있음 */
+ }

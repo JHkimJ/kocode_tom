@@ -1,0 +1,73 @@
+#wrap{
+    width:1000px;
+    margin:0 auto;
+    border: 1px solid black;
+}
+
+#box1{
+    border: 1px solid red;
+    height: 50px;
+    width: 100%; 
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+}
+    /* justify-content: end; 우측을 기준으로 시작 */
+    /* flex는 레이아웃 구성, 현재실무에서 태그를 뱇치하는 방법중 하나이다
+    display:flex가 적용된 태그는 부모태그(flex 컨테이너) 라고 한다.
+    flex적용된 태그의 하위태그들은 flex아이템 라고 라다.
+    flex는 주축과 교차축에 의해 배치가 된다. 주축의 기본 방향은 좌측에서 우측이다.
+    교차축은 주축의 끝이 기준이 된다.
+     */
+    /*
+    inline <b>가나다</b>
+    inline - block 브라우저 크기만큼 block size 갖는다.
+    display: flex는 한줄로 배치
+    */
+    /*
+     비율 %는 상위 태그 기준을 따라감
+     */
+    /* margin-bottom: 50px;
+    font-size: 20px;
+    font-weight:900 ; 글씨 굵기값 */
+
+/* line-height : 줄의 간격,한줄쓸때 용이 */
+
+.logo_box{
+    width:200px;
+    /* float:left;  정렬 - 왼쪽 기준으로 정렬 시키기 float은  부모태그에서 벗어남 */
+    
+}
+.logo_box img{  /* 클래스가 logo_box안 하위 img 태그를 선택*/
+    height:50px;
+}
+/* https://picsum.photos/300/300?random=3 임의의 이미지 가져오기 */
+.menu_box{
+    width:calc( 100% - 200px );
+}
+.menu{
+    list-style-type:none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.menuTitle{
+    margin-left:80px;
+}
+/* flex에서 수평 배치를 하려면 주축기준으로 해야한다.
+주축은  justify-content이다. */
+#box2{
+    width: 100%;
+    display: flex;
+    /* flex 의 방식은 한줄배치이다.! */
+    flex-wrap: wrap; /* 여러줄 배치 하려면 wrap 설정 */
+    justify-content: space-between; /* 주축 수평 */
+    row-gap:50px; /* 교차축 수직 */
+}
+.items{
+    width: 300px;
+    /* div 크기보다 큰 이미지를 숨겨줌 */
+    /* overflow: hidden; */
+}
