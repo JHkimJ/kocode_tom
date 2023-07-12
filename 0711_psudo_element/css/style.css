@@ -22,6 +22,7 @@
 #clsBtn{
     width: 50px;
     height: 50px;
+    position: relative;
 }
 #clsBtn::before,
 #clsBtn::after{
@@ -30,9 +31,20 @@
     width: 50px;
     height: 2px;
     background-color: red;
-
-    position:absolute;
+    position: absolute; /*서로 겹칠수 있음*/
     left: 50%;
     top:50%;
-    transform:translate(-50%,-50%); /* 정중앙으로 보낼수있음 */
+    transition: all 0.4s;
+    /* transform:translate(-50%,-50%);  */
+}
+#clsBtn::before{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+#clsBtn::after {
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+#clsBtn:hover::before,
+#clsBtn:hover::after{
+    width : 30px;
+    height : 30px;
 }
