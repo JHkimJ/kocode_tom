@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2f30436051f1fd3d30c2de9615ab25ca6761ea5b
 var pTime = prompt("주차시간 분(단위) 입력");
 var fee;
 
