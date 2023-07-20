@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        // 변수 - 데이터를 저장하는 메모리 공간
+        // 데이터 - 숫자,문자
+
+        // a = 10;
+        // 나변수 =20;
+        // 너도변수 = 30;
+        // 상현이도변수 = 40;
+        // bbb= 50;
+        // apple="아이폰" ;
+        // a_kk; //  "_ " 언더바는 가능
+        
+        // prompt 입력-> 저장-> 실행->출력
+        //  = : 대입연산자 (오른쪽의 값을 왼쪽에 저장)
+        // == : 같다
+        // let name ="김재호";
+        //     name ="kim";
+        // let name ="김"; // let변수는 재사용이 불가
+
+        // var age = 24;
+        //     age = 30;
+        // var age = 40;
+
+        // let age = 50; // let 타입은 데이터 변경은 가능하지만 같은 이름의 변수를 
+        //               // 다시 생성(재선언) 할 수 없다
+        //               // var 타입은 데이터 변경 가능하고 같은 이름의 변수를
+        //               // 재선언 할 수 있다.
+        //               // const 타입은 처음 저장한 데이터를 변경 시킬수 없고,
+        //               // 재선언 할 수 없다.
+        // const pi = 3.14; 
+    //  pi = 2.1111;  const 는 후에 데이터 변경이 안됨
+    // 변수의 시작은 문자로 숫자로 시작할수없음
+
+
+        // var name = prompt(); // 입력후 name 에 저장
+        // alert(name);         // name에 저장후 name출력
+        // 자바 스크립트에서 문자를 표현하려면 "" 또는 '' 문자를 감싸주어야한다.
+        // 자바 스크립트에서 html 태그는 문자로 표현 할수 있다.
+        
+        // document.write("<b>"+name+"</b>");
+        // 프롬프트 내용이 볼드체로 출력 미입력시 null 문자 출력.
+        // 웹에서 입력되는 숫자나 문자는 모두 문자열로 입력된다.
+        // var number1 = Number(prompt("숫자를 입력하세요."));
+        // var number2 = parseInt(prompt("두번째 숫자를 입력하세요.")); // 문자가 껴있어도 계산이 가능한 상황에선 계산이 가능 함 단, 앞에 숫자가 먼저 와야함
+        // typeof() 형태를 출력하는 함수 , prompt 앞에 Number 를 넣어서 숫자형태로 변환
+        // document.write(typeof(number1)); 
+        
+        // var result = number1 + number2
+        
+        // document.write(result);
+
+        // 국어,수학,영어 3과목의 점수를 입력받아 총점을 출력하시오.
+        
+        var kor = Number(prompt("국어 점수를 입력하세요"));
+        var mat = parseInt(prompt("수학 점수를 입력하세요"));
+        var eng = parseInt(prompt("영어 점수를 입력하세요"));
+
+        result = kor + mat + eng
+        
+        document.write("총점 : <b>" + result+"<b> 점");
+        
+        
+
+
+        
+
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
